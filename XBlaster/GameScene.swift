@@ -358,5 +358,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       }
     }
   }
+    
+    func starFieldEmitterNode(
+        speed speed: CGFloat, lifetime: CGFloat, scale: CGFloat, birthRate: CGFloat, color: SKColor) -> SKEmitterNode {
+            // more to come
+            let star = SKLabelNode(fontNamed: "Helvetica")
+            star.fontSize = 80.0
+            star.text = ""
+    }
 
 }
