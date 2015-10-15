@@ -102,6 +102,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             speed: -48, lifetime: size.height / 23, scale: 0.2,
             birthRate: 1, color: SKColor.lightGrayColor()))
         addChild(starfieldNode)
+        
+        var emitterNode = starfieldEmitterNode(
+            speed: -32, lifetime: size.height / 10, scale: 0.14,
+            birthRate: 2, color: SKColor.grayColor())
+        emitterNode.zPosition = -10
+        starfieldNode.addChild(emitterNode)
+        
+        emitterNode = starfieldEmitterNode(
+            speed: -20, lifetime: size.height / 5, scale: 0.1,
+            birthRate: 5, color: SKColor.darkGrayColor())
+        starfieldNode.addChild(emitterNode)
     }
     
     func setUpUI() {
@@ -386,6 +397,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         emitterNode.particleColorBlendFactor = 1
         emitterNode.position = CGPoint(x: CGRectGetMidX(frame), y: CGRectGetMaxY(frame))
         emitterNode.particlePositionRange = CGVector(dx: CGRectGetMaxX(frame), dy: 0)
+        emitterNode.particleSpeedRange = 16.0
+        
+        // 1
+        let twinkles = 20
+        let colorSequence = SKKeyframeSequence(capacity: twinkles*2)
+        // 2
+        let twinkleTime = 1.0/CGFloat(twinkles)
+        for i in 0..<twinkles {
+            // 3
+            colorSequence.addKeyframeValue(SKColor.whiteColor(),  time: CGFloat(i)*2*twinkleTime/2)
+            colorSequence.addKeyframeValue(SKColor.yellowColor(), time: (CGFloat(i)*2+1)*twinkleTime/2)
+        }
+        // 4
+        emitterNode.particleColorSequence = colorSequence
+        
         emitterNode.advanceSimulationTime(NSTimeInterval(lifetime))
         
         return emitterNode
