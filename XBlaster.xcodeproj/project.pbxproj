@@ -32,6 +32,9 @@
 		8FBAE95F19C04C7A00DE2EF9 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95319C04C7A00DE2EF9 /* SKTEffects.swift */; };
 		8FBAE96019C04C7A00DE2EF9 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95419C04C7A00DE2EF9 /* SKTTimingFunctions.swift */; };
 		8FBAE96119C04C7A00DE2EF9 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95519C04C7A00DE2EF9 /* Vector3.swift */; };
+		A93B3ED91BD6F7A300A1C50A /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */; settings = {ASSET_TAGS = (); }; };
+		A93B3EDA1BD6F7A300A1C50A /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED71BD6F7A300A1C50A /* explode.wav */; settings = {ASSET_TAGS = (); }; };
+		A93B3EDB1BD6F7A300A1C50A /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED81BD6F7A300A1C50A /* laser.wav */; settings = {ASSET_TAGS = (); }; };
 		A9FED3841BD4510F0029BE18 /* engine.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3821BD4510F0029BE18 /* engine.sks */; settings = {ASSET_TAGS = (); }; };
 		A9FED3851BD4510F0029BE18 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3831BD4510F0029BE18 /* spark.png */; settings = {ASSET_TAGS = (); }; };
 		A9FED3871BD4553A0029BE18 /* enemyDeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3861BD4553A0029BE18 /* enemyDeath.sks */; settings = {ASSET_TAGS = (); }; };
@@ -65,6 +68,9 @@
 		8FBAE95319C04C7A00DE2EF9 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		8FBAE95419C04C7A00DE2EF9 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		8FBAE95519C04C7A00DE2EF9 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
+		A93B3ED71BD6F7A300A1C50A /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
+		A93B3ED81BD6F7A300A1C50A /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
 		A9FED3821BD4510F0029BE18 /* engine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = engine.sks; sourceTree = "<group>"; };
 		A9FED3831BD4510F0029BE18 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		A9FED3861BD4553A0029BE18 /* enemyDeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = enemyDeath.sks; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		35CB3006198D697600C8515C /* XBlaster */ = {
 			isa = PBXGroup;
 			children = (
+				A93B3ED51BD6F7A300A1C50A /* Sounds */,
 				A9FED3811BD450C10029BE18 /* Particles */,
 				8FBAE94919C04C7A00DE2EF9 /* SKTUtils */,
 				35CB3054198D7C4400C8515C /* AI */,
@@ -179,6 +186,16 @@
 			path = SKTUtils;
 			sourceTree = "<group>";
 		};
+		A93B3ED51BD6F7A300A1C50A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */,
+				A93B3ED71BD6F7A300A1C50A /* explode.wav */,
+				A93B3ED81BD6F7A300A1C50A /* laser.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		A9FED3811BD450C10029BE18 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,8 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93B3EDA1BD6F7A300A1C50A /* explode.wav in Resources */,
 				A9FED3851BD4510F0029BE18 /* spark.png in Resources */,
+				A93B3EDB1BD6F7A300A1C50A /* laser.wav in Resources */,
 				A9FED3871BD4553A0029BE18 /* enemyDeath.sks in Resources */,
+				A93B3ED91BD6F7A300A1C50A /* bgMusic.mp3 in Resources */,
 				35CB3015198D697600C8515C /* Images.xcassets in Resources */,
 				8F5EE08F19C05B55005B6752 /* edunline.ttf in Resources */,
 				35CB3013198D697600C8515C /* Main.storyboard in Resources */,

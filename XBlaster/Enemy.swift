@@ -201,6 +201,7 @@ class Enemy : Entity {
                 mainScene.particleLayerNode.addChild(deathEmitter)
             }
             deathEmitter.resetSimulation()
+            mainScene.playExplodeSound()
         }
     }
 }

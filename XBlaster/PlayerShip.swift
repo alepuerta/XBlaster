@@ -20,7 +20,7 @@ class PlayerShip: Entity {
         // Details on how the Sprite Kit physics engine works can be found in the book in
         // Chapter 9, "Beginner Physics"
         configureCollisionBody()
-        createEngine()
+//        createEngine()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -87,6 +87,9 @@ class PlayerShip: Entity {
         // This method is called from GameScene didBeginContact(contact:) when the player entity
         // hits an enemy entity. When that happens the players health is reduced by 5 and a check
         // makes sure that the health cannot drop below zero
+        var mainScene = scene as! GameScene
+        mainScene.playExplodeSound()
+        
         health -= 5
         if health < 0 {
             health = 0
@@ -98,7 +101,11 @@ class PlayerShip: Entity {
             engineEmitter.position = CGPoint(x: 1, y: -4)
             engineEmitter.name = "engineEmitter"
             addChild(engineEmitter)
+            
+            var mainScene = scene as! GameScene
+            engineEmitter.targetNode = mainScene.particleLayerNode
         }
+        
         
     }
     
