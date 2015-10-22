@@ -32,12 +32,13 @@
 		8FBAE95F19C04C7A00DE2EF9 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95319C04C7A00DE2EF9 /* SKTEffects.swift */; };
 		8FBAE96019C04C7A00DE2EF9 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95419C04C7A00DE2EF9 /* SKTTimingFunctions.swift */; };
 		8FBAE96119C04C7A00DE2EF9 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAE95519C04C7A00DE2EF9 /* Vector3.swift */; };
-		A93B3ED91BD6F7A300A1C50A /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */; settings = {ASSET_TAGS = (); }; };
-		A93B3EDA1BD6F7A300A1C50A /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED71BD6F7A300A1C50A /* explode.wav */; settings = {ASSET_TAGS = (); }; };
-		A93B3EDB1BD6F7A300A1C50A /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED81BD6F7A300A1C50A /* laser.wav */; settings = {ASSET_TAGS = (); }; };
-		A9FED3841BD4510F0029BE18 /* engine.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3821BD4510F0029BE18 /* engine.sks */; settings = {ASSET_TAGS = (); }; };
-		A9FED3851BD4510F0029BE18 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3831BD4510F0029BE18 /* spark.png */; settings = {ASSET_TAGS = (); }; };
-		A9FED3871BD4553A0029BE18 /* enemyDeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3861BD4553A0029BE18 /* enemyDeath.sks */; settings = {ASSET_TAGS = (); }; };
+		A93B3ED91BD6F7A300A1C50A /* bgMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */; };
+		A93B3EDA1BD6F7A300A1C50A /* explode.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED71BD6F7A300A1C50A /* explode.wav */; };
+		A93B3EDB1BD6F7A300A1C50A /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = A93B3ED81BD6F7A300A1C50A /* laser.wav */; };
+		A983487F1BD98E1E0055C470 /* ventingPlasma.sks in Resources */ = {isa = PBXBuildFile; fileRef = A983487E1BD98E1E0055C470 /* ventingPlasma.sks */; };
+		A9FED3841BD4510F0029BE18 /* engine.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3821BD4510F0029BE18 /* engine.sks */; };
+		A9FED3851BD4510F0029BE18 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3831BD4510F0029BE18 /* spark.png */; };
+		A9FED3871BD4553A0029BE18 /* enemyDeath.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9FED3861BD4553A0029BE18 /* enemyDeath.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		A93B3ED61BD6F7A300A1C50A /* bgMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgMusic.mp3; sourceTree = "<group>"; };
 		A93B3ED71BD6F7A300A1C50A /* explode.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explode.wav; sourceTree = "<group>"; };
 		A93B3ED81BD6F7A300A1C50A /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laser.wav; sourceTree = "<group>"; };
+		A983487E1BD98E1E0055C470 /* ventingPlasma.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ventingPlasma.sks; sourceTree = "<group>"; };
 		A9FED3821BD4510F0029BE18 /* engine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = engine.sks; sourceTree = "<group>"; };
 		A9FED3831BD4510F0029BE18 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		A9FED3861BD4553A0029BE18 /* enemyDeath.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = enemyDeath.sks; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				A9FED3821BD4510F0029BE18 /* engine.sks */,
 				A9FED3831BD4510F0029BE18 /* spark.png */,
 				A9FED3861BD4553A0029BE18 /* enemyDeath.sks */,
+				A983487E1BD98E1E0055C470 /* ventingPlasma.sks */,
 			);
 			name = Particles;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				8F5EE08F19C05B55005B6752 /* edunline.ttf in Resources */,
 				35CB3013198D697600C8515C /* Main.storyboard in Resources */,
 				A9FED3841BD4510F0029BE18 /* engine.sks in Resources */,
+				A983487F1BD98E1E0055C470 /* ventingPlasma.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
